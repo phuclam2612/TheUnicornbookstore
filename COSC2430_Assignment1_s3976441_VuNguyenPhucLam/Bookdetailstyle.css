@@ -1,0 +1,155 @@
+
+html  {
+    background-color: #CDF0EA;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Sacramento', cursive;
+    text-decoration-line: underline;
+    text-decoration: wavy;
+    text-decoration-color: aqua;
+}
+
+.navigationbar{
+    background-color: bisque;
+    text-align: center;
+    color: red;
+}
+
+header .navigationbar a{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    text-decoration-color: red;
+}
+
+.mobilenavbaricon{
+    text-align:center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: larger;
+    background-color:bisque;
+    display: none;
+
+}
+header .navigationbar ul {
+    float: none;
+    background-color: red;
+}
+header .navigationbar li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+header .navigationbar a{
+    font-size: larger;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+@media (max-width: 768px){
+    .navigationbar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+    }
+    .navigationbar ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .navigationbar li{
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: larger;
+    }
+    .navigationbar{
+        display: none;
+    }
+    .mobilenavbaricon{
+        display: block;
+    }
+    .mobilenavbaricon:hover + .navigationbar{
+        display: block;
+    }
+    .navigationbar:hover{
+        display: block;
+    }
+    .book-images{
+        flex-direction: column;
+    }
+    
+      .book-price{
+        margin-bottom: 10px;
+    }
+    
+      .add-to-cart-button{
+        margin-top: 10px;
+    }
+
+    .videos{
+        flex-direction: column;
+    }
+}
+.breadcrumb {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: x-large;
+    background-color: bisque;
+    color: red;
+  }
+  
+  .book-images {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    left: 100px;
+  }
+
+  .book-images2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .book-image {
+    width: 50%;
+    margin: 0 10px;
+  }
+  
+  .book-images2 {
+    width: 25%;
+    margin: 0 10px;
+  }
+  .book-price {
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-to-cart-button {
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+footer{
+    padding-top: 20px;
+    background-color: bisque;
+}
+
+footer button{
+    color: black;
+    border-radius: 10px;
+    border: 0px;
+    font-size: larger;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

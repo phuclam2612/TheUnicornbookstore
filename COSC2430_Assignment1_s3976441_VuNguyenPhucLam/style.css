@@ -1,0 +1,121 @@
+html  {
+    background-color: #CDF0EA;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Sacramento', cursive;
+    text-decoration-line: underline;
+    text-decoration: wavy;
+    text-decoration-color: aqua;
+}
+
+.navigationbar{
+    background-color: bisque;
+    text-align: center;
+}
+
+header .navigationbar a{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    text-decoration-color: red;
+    
+}
+
+.mainlist #Ot{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+
+.mainlist #Fict{
+    background-color: #E1FFEE;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: cursive;
+    color: #4682A9;
+    text-shadow: #CDF0EA;
+}
+
+.mainlist{
+    background-color: #FFEEAF;
+    border-style: solid;
+    border-color: #FFBFA9;
+}
+
+.mainlist #NonFict{
+    background-color: #E1FFEE;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: cursive;
+    color: #4682A9;
+    text-shadow: #CDF0EA;
+}
+
+.mainlist #booklist1{
+    border: solid;
+    border-color: #4E4FEB;
+    color: #FF8989;
+    background-color: #2DCDDF;
+}
+
+.mainlist #booklist2{
+    border: solid;
+    border-color: #4E4FEB;
+    color: #FF8989;
+    background-color: #2DCDDF;
+}
+
+@media (max-width: 768px){
+    .navigationbar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+    }
+    .navigationbar ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .navigationbar li{
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: larger;
+    }
+    .navigationbar{
+        display: none;
+    }
+    .mobilenavbaricon{
+        display: block;
+    }
+    .mobilenavbaricon:hover + .navigationbar{
+        display: block;
+    }
+    .navigationbar:hover{
+        display: block;
+    }
+    .mainlist #booklist1{
+        flex-direction: column;
+    }
+}
+
+footer{
+    padding-top: 20px;
+    background-color: bisque;
+}
+
+footer button{
+    color: black;
+    border-radius: 10px;
+    border: 0px;
+    font-size: larger;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,148 @@
+<!--RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Vu Nguyen Phuc Lam
+ID: 3976441
+Acknowledgement: Acknowledge the resources that you use-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicorn book Store🕮</title>
+    <link rel="icon" href="Logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="Homepage.html">
+            <img src="BS Logo.png" alt="Store Logo" width="250"/>
+            &nbsp;
+            <h1>UNICORN BOOKS STORE🕮</h1>
+        </a>
+      <br />
+      <nav class="navigationbar">
+        <div>
+          <a href="Homepage.html" target="_blank">
+            <strong>Home</strong>
+          </a>
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          <a href="Fiction.html" target="_blank">
+              <strong>Fiction Books</strong>
+          </a>
+          &nbsp;
+          &nbsp;
+          &nbsp;
+          <a href="NonFiction.html" target="_blank">
+              <strong>Non-Fiction Books</strong>
+          </a>
+          &nbsp;
+          &nbsp;
+          &nbsp; 
+          <a href="#book-list" target="_blank">
+              <strong>Buy Now!</strong>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <center>
+      <section>
+        <div class="Contactcontainer">
+            <img id="PLlogo" src="PLbookstore.png" width="100%" alt="PLBookstore" />
+            <br>
+            <h2>Contact Us</h2>
+        </div>
+    </section>
+      <br />
+      <section id="Aboutus" style="width: 600px;">
+        <form action="form-processing" method="post" enctype="application/x-www-form-urlencoded">
+            <br>
+            <fieldset>
+                <legend style="width: auto; margin-left: auto; margin-right: auto;">
+                    <strong>Contact Purpose</strong>
+                </legend>
+                <select name="purpose" id="purpose">
+                    <option value disabled selected hidden>Purpose</option>
+                    <option value="SELL">I want to sell books</option>
+                    <option value="BUY">I want to buy books</option>
+                </select>
+                <br>
+                <br>
+                Please fill your Persional information👇
+                <br>
+                <br>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                <br>
+                <br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                <br>
+                <br>
+                <input type="email" name="mail" id="mail" placeholder="Email Address" required>
+                <br>
+                <br>
+                <label for="pnumber">Phone Number☎️:</label>
+                <input type="tel" name="pnumber" id="pnumber" pattern="0\d{0,9}" placeholder="012-345-6789" required>
+                <br>
+                <br>
+                <p><strong>Contact Preference</strong></p>
+                <input type="checkbox" name="contactemail" id="contactemail" value="email">
+                <label for="email">Contact by email</label>
+                <br>
+                <br>
+                <input type="checkbox" name="contactphone" id="contactphone" value="phone">
+                <label for="phone">Contact by phone</label>
+                <br>
+                <br>
+                Recieve Weekly Newsletter🗞️:
+                <input type="radio" name="rwn" id="yes" checked>Yes
+                <input type="radio" name="rwn" id="no">No</br>
+                <br>
+                Extra Notes:
+                <input type="text" name="notes" id="notes" placeholder="extra notes">
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit" style="background-color: red; color: white; font-weight: bold;">
+            <input type="reset" value="Reset" style="background-color: red; color: white; font-weight: bold;">
+        </form>
+      </section>
+      <section id="videos">
+        <table>
+          <tr>
+            <td>
+              <center>
+                <h2>Check our review 🤙 </h2>
+                <iframe width="600" height="450" src="https://www.youtube.com/embed/GNU_hLy6YAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+              </center>
+            </td>
+            <td>
+              <h2>❤️💙💜💚💛</h2>
+            </td>
+            <td>
+              <center>
+                <h2>Our map 🌐 </h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.7038347485027!2d-71.47531508821208!3d42.47658722761137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e391613ab1f6c7%3A0x7b2b665c6c824d91!2sThe%20Silver%20Unicorn%20Bookstore!5e0!3m2!1svi!2s!4v1690789758811!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </center>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <footer>
+        <nav>
+          <div>
+            <h3>About Us: ☎️0123456789</h3>
+            <h3>© Copyright 2023 by UBS, Inc</h3>
+            <h3>Privacy Policy, Terms</h3>
+            <a href="Contactpage.html" target="_blank">
+              <strong>CONTACT US</strong>
+            </a>
+          </div>
+        </nav>
+      </footer>
+    </center>
+</body>
+</html>
